@@ -3,3 +3,10 @@
 h1{
     color:chocolate;
 }
+
+/*End of Type*/
+
+.current{
+    background-color: beige;
+    color:blueviolet;
+}
