@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: index.md
+---
+
+<body>
+    <h1>Welkom op mijn digitale speelveld!</h1>
+    <p>Dit is waar het niet leuk gaat worden</p>
+</body>
