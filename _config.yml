@@ -8,7 +8,7 @@ permalink: /:title
 style: uncompressed
 
 # Where things are
-source:       .
+source:
 destination:  ./_site
 plugins_dir:  _plugins
 layouts_dir:  _layouts
