@@ -1,14 +1,14 @@
 title: Speelvld
 author: Sabrina Doornekamp
 baseurl: /
-domain: speelvld.nl
+domain: speelvld-from-scratch.nl
 media: /media
 markdown: kramdown
 permalink: /:title
 style: uncompressed
 
 # Where things are
-source:
+source:       .
 destination:  ./_site
 plugins_dir:  _plugins
 layouts_dir:  _layouts
