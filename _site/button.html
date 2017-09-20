@@ -6,7 +6,7 @@
         <meta name="robots" content="noindex" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Speelvld</title>
-        <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+        <link href="/speelvld-from-scratch/css/common.css" rel="stylesheet">
     </head>
 <body>
 <div class="container">
@@ -16,18 +16,29 @@
 
 <!--NAVIGATIE-->
 
-    {% include nav-links.html %}
+     <div class="nav-links">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="block-vertical.html">Verticaal blok</a></li>
+        <li><a href="button.html">Button</a></li>
+    </ul>
+</div>
+
 
  <!-- EINDE NAVIGATIE-->
-   
+
     <main>
-    {{content}}
+    <div class="text-space">
+    <p>Dit is een button</p>
+</div>
+
+<button div class="center">button</button>
     </main>
 
     <aside>
        <h1>Aside</h1>
     </aside>
-    
+
     <footer>
        <h1>Footer</h1>
     </footer>

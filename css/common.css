@@ -1,41 +1,144 @@
-/*Type*/
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ * Holy grail grid......
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ * Blocks...............Different kinds of blocks.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Page-main............The page main area.
+ * Page-aside...........The side area of the page.
+ * Buttons..............Button elements.
+ * Navigation...........Navigation elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+/*------------------------------------*\
+  $TOOLS
+\*------------------------------------*/
+
+.center{
+    margin:0 auto;
+}
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  $BASE
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
 
 h1{
     color: dimgray;
 }
 
-/*End of Type*/
+/*------------------------------------*\
+  $OBJECTS
+\*------------------------------------*/
 
-.current{
-    background-color: beige;
+/*------------------------------------*\
+  #BLOCKS
+\*------------------------------------*/
+
+.block-vertical{
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    -webkit-box-shadow: -1px 0px 21px -1px rgba(99,99,99,1);
+    -moz-box-shadow: -1px 0px 21px -1px rgba(99,99,99,1);
+    box-shadow: -1px 0px 21px -1px rgba(99,99,99,1);
 }
+
+/*------------------------------------*\
+  $COMPONENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #PAGE-HEAD
+\*------------------------------------*/
+
 
 header {
     grid-area: header;
-    background-color: lightgray;
-
+    background-color: whitesmoke;
 }
+
+/*------------------------------------*\
+  #PAGE-FOOTER
+\*------------------------------------*/
+
+footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+}
+
+/*------------------------------------*\
+  #PAGE-MAIN
+\*------------------------------------*/
+
+
+main {
+    grid-area: content;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+}
+
+/*------------------------------------*\
+  #PAGE-ASIDES
+\*------------------------------------*/
+
+aside {
+    grid-area: side;
+    margin-right: 1rem;
+    background-color: whitesmoke;
+}
+
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
 
 nav {
     grid-area: nav;
     margin-left: 0.5rem;
-    border:solid red 1px;
+    background-color: whitesmoke;
 }
 
-main {
-    grid-area: content;
-    background-color: lightgray;
+
+.nav-links {
+    grid-area: nav;
+    margin-left: 0.5rem;
+    background-color: whitesmoke;
 }
 
-aside {
-    grid-area: side;
-    margin-right: 0.5rem;
-}
 
-footer {
-    grid-area: footer;
-    border: dashed gray 1px;
-}
+
+
+/* all content is inside the container class which uses holy grail grid layout */
 
 .container {
   display: grid;
@@ -50,4 +153,40 @@ footer {
   grid-gap: 10px;
 
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "side"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(75px, auto) /* Nav */
+      1fr /* Content */
+      minmax(75px, auto) /* Sidebar */
+      auto; /* Footer */
+  }
+
+  nav, aside {
+    margin: 0;
+  }
+}
+
+/*------------------------------------*\
+  $TRUMPS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #TEXT HELPERS
+\*------------------------------------*/
+
+
+.text-space{
+    margin:5%;
 }
