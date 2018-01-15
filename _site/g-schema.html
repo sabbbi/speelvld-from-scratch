@@ -29,10 +29,29 @@
  <!-- EINDE NAVIGATIE-->
    
     <main>
-    <div class="text-space">
-    <p>Selecteer aan de linkerkant een element om te bekijken</p>
-</div>
+    <form>
+   <fieldset>
+        <legend>G-schema</legend>
+            <label>Gebeurtenis &nbsp; <textarea input type="text" value="abc" autofocus>     </textarea></label>
+            <p>Gevoel &nbsp; <input type="textarea" value="abc" autofocus></p>
+            <p>Gedrag &nbsp; <input type="text" value="abc" autofocus></p>
+            <p>Gevolg &nbsp; <input type="text" value="abc" autofocus></p>
+    </fieldset>
+</form>
 
+<p> Upload een document&nbsp;<input type="file"></p>
+
+<button>Sla gedachterapport op</button>
+
+<input type="text">
+<script>
+  document.querySelector("input").focus();
+  console.log(document.activeElement.tagName);
+  // → INPUT
+  document.querySelector("input").blur();
+  console.log(document.activeElement.tagName);
+  // → BODY
+</script>
     </main>
 
     <aside>
