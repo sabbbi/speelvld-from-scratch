@@ -83,7 +83,6 @@ h1{
 
 header {
     grid-area: header;
-    background-color: whitesmoke;
 }
 
 /*------------------------------------*\
@@ -102,7 +101,6 @@ footer {
 
 main {
     grid-area: content;
-    background-color: whitesmoke;
     padding: 0.5rem;
 }
 
@@ -113,7 +111,6 @@ main {
 aside {
     grid-area: side;
     margin-right: 1rem;
-    background-color: whitesmoke;
 }
 
 
