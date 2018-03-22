@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="content-type">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="robots" content="noindex" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Speelvld</title>
-        <link href="css/materialize.css" rel="stylesheet">
-        <link href="css/materialize.min.css" rel="stylesheet">
-    </head>
- <body>   
-<div class="container">
-    <header>
-       
-                <h1 class="">Hoe voel je je nu?</h1>
 
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speelvld</title>
+  <link href="css/materialize.css" rel="stylesheet">
+  <link href="css/materialize-adjustment.css" rel="stylesheet">
+  <link href="css/materialize.min.css" rel="stylesheet">
+</head>
+
+<body class="teal lighten-5">
+  <div class="container">
+    <header>
+      <h1 class="cyan-darken-4-txt">Hoe voel je je nu?</h1>
     </header>
 
-
-   
     <div class="row">
-        
-            <input class="btn btn-primary w-100" type="button" data-toggle="button" id="btnAngry" value="Boos">
-
-            <input class="btn btn-primary w-100" type="button" data-toggle="button" id="btnSad" value="Bedroefd">
-
-            <button type="button" class="btn btn-primary test-btn w-100" type="button" data-toggle="button" id="btnHappy" value="Blij">Blij</button>
-            <button type="button" class="btn btn-primary test-btn w-100" type="button" data-toggle="button" id="btnHappy" value="Blij">Bang</button>
-
-       
-
-        </div>
-
-       <div class="row">
-            <input class="btn btn-secondary w-100" type="button" data-toggle="button" id="sentEmotionForm" value="Verzenden">
-        </div>
+      <div class="col s12 m6 l3">
+        <input class="btn btn-primary btn-xl w100  deep-orange accent-4" type="button" data-toggle="button" id="btnAngry" value="Boos">
+      </div>
+      <div class="col s12 m6 l3">
+        <input class="btn btn-primary btn-xl w100 blue-grey lighten-1" type="button" data-toggle="button" id="btnSad" value="Bedroefd">
+      </div>
+      <div class="col s12 m6 l3">
+        <input class="btn btn-primary btn-xl w100 amber accent-4" type="button" data-toggle="button" id="btnHappy" value="Blij">
+      </div>
+      <div class="col s12 m6 l3">
+        <input class="btn btn-primary btn-xl w100 blue-grey darken-4" type="button" data-toggle="button" id="btnScared" value="Bang">
+      </div>
+    </div>
 
 
-  <div class="fixed-action-btn click-to-toggle">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">Boos</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">Bedroefd</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">Blij</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">Bang</i></a></li>
-    </ul>
+    <div class="row">
+        <footer>
+        <div class="fixed-footer p0">
+      <div class="col s12 p0">
+        <input class="btn btn-secondary btn-large w100 cyan darken-4" type="button" data-toggle="button" id="sentEmotionForm" value="Verzenden">
+      </div>
+    </div>
   </div>
-
-  
-
+</footer>
 </div>
+
+
+  </div>
 </body>
 
-<script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
-
-

@@ -1,0 +1,28 @@
+/*
+Customs
+*/
+
+.w100{
+  width:100%;
+}
+
+.fixed-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.p0{
+  padding:0!important;
+}
+
+.cyan-darken-4-txt{
+  color:#006064!important;
+}
+
+.btn-xl{
+  height:84px!important;
+}
